@@ -1,0 +1,126 @@
+.milestones-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.milestone-box {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.milestone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.left-icon-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.multiplier {
+  margin-left: 0em;
+  background-color: transparent;
+  border-radius: null;
+  padding: 0;
+  font-size: 1.1em;
+  color: #6200ea;
+  font-weight: bold;
+  width: 100px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.icon.left-icon {
+  width: 39px;
+  height: 39px;
+}
+
+.icon.right-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.text {
+  flex: 1;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 200px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.progress-bar-container {
+  width: 33%;
+}
+
+.progress-text {
+  margin-top: 5px;
+  font-size: 0.75em;
+  color: #000;
+  margin-left: 50%;
+}
+
+.progress-bar-background {
+  flex: 2;
+  height: 20px;
+  width: 90%;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #6200ea;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.page-btn {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.page-btn:hover {
+  background-color: #3700b3;
+}
+
+.page-number {
+  font-size: 16px;
+}

@@ -1,0 +1,124 @@
+.shop-page {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/public/shop.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Keeps the background behind other content */
+    margin-top: 2px;
+  }
+  
+  .product-container {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    top: 26vh;
+    right: 27vh;
+    width: 50%;
+    margin: auto;
+    flex-wrap: wrap;
+    min-width: 262px ;
+  }
+  
+  .product {
+    flex: 1; /* Flexible layout for items to stretch or shrink based on available space */
+    min-width: 10%; /* Prevents excessive shrinking */
+    height: auto; /* Height adjusts to content */
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Aligns children vertically */
+    justify-content: center;
+    align-items: center; /* Centers children horizontally */
+    transition: all 0.5s ease; /* Smooth transition effect for any change */
+    margin: 0 25px;
+  }
+  
+  .product-info {
+    width: 100%; /* Fills the .product container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease; /* Smooth transition effect for any change */
+    align-items: flex-end;
+  }
+  
+  .product img {
+    width: 70%; /* Image width relative to .product width */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Covers the area without breaking aspect ratio */
+  }
+  
+  .product h3, .product p {
+    color: white; 
+    margin: 5px 0;
+    transition: font-size 0.3s ease; 
+    font-size: 1.2vw; 
+  }
+  /* -- Product Button start -- */
+  .product button {
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    padding: 1vw 1.8vw; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 1vw; 
+  }
+  .product button:hover {
+    background-color: #fadf67; 
+  }
+  .product button.disabled, .product button:disabled {
+    background-color: #cccccc;
+    color: #666666; 
+    cursor: not-allowed; 
+    box-shadow: none; 
+  }
+  /* -- Product Button end -- */
+
+  @media (max-width: 768px) {
+    .product h3, .product p, .product button {
+      font-size: 1.2vw; 
+    }
+  
+    .product button {
+      padding: 1vw 1.8vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product h3, .product p, .product button {
+      font-size: 1.8vw;
+    }
+  
+    .product button {
+      padding: 0.8vw 1.6vw;
+    }
+  }
+  @media (max-width: 300px) {
+    .product h3, .product p {
+      font-size: 10px; 
+    }
+  
+    .product button {
+      padding: 2px 4px; 
+      font-size: 9px;
+    }
+  
+    .product {
+      margin: 0 10px;
+    }
+  }
+  

@@ -1,0 +1,110 @@
+nav{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+    padding: 15px 5%;
+    background: white;
+    width: auto;
+    top: 0;
+    z-index: 100;
+    box-shadow: 2px 2px 5px #7e5d77; 
+}
+.nav-left, .nav-right{
+    display: flex;
+}
+.nav-right a,.nav-left a{
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+/*-- NarBar Left Start --*/
+.logo{
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: large;
+    background-image: linear-gradient(79deg, #7439db, #C66FBC 48%, #F7944D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    color: #7439db; 
+    min-width: 140px;
+}
+/*-- NarBar Left End --*/
+
+/*-- NarBar Right Start --*/
+.user{
+    display: flex;
+}
+.user-pic{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.user-name{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 95%;
+    color: #7e5d77;
+}
+.coin{
+    display: flex;
+    margin: 5px;
+}
+.coin-icon{
+    width: 30px;
+    height: 30px;  
+}
+.coin-number{
+    display: flex;
+    color: #7e5d77;
+    padding: 0 10px;
+    font-weight: 700;
+    flex-direction: column;
+    justify-content: center;
+}
+/*-- NarBar Right End --*/
+
+/*-- User Menu start --*/
+.user-menu{
+    position: absolute;
+    top: 75px;
+    right: 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 150px;
+}
+.user-menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.user-menu::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+}
+.user-menu.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--spend) ease;
+}
+.user-menu.inactive{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20);
+    transition: var(--spend) ease;
+}
+.logout-link {
+    color: #7e5d77;
+    text-decoration: none;
+    font-weight: 600;
+}
+/*-- User Menu end --*/

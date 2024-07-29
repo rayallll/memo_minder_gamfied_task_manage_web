@@ -1,0 +1,261 @@
+.challenge-page {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+  }
+  
+.combat-background {
+  position: absolute;
+  top: 0;  
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/combat_scenario.png'); /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  z-index: 0; /* Keeps the background behind other content */
+  margin-top: 2px;
+}
+
+.character {
+  position: absolute;
+  width: 200px; 
+  height: 270px; 
+  background-size: contain;
+  background-repeat: no-repeat; 
+  transition: left 0.2s ease-out;
+  top: 35vh;
+  z-index: 3;
+}
+
+/*--Health Bar Start--*/
+.combat-health{
+  display: flex; 
+  align-items: center; 
+  position: absolute; 
+  bottom: 2vh;
+  left: 2vw;
+}
+.combat-health img{
+  width: 30px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.combat-health-bar {
+  display: flex; 
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-bottom: 10px;
+  background-color: beige;
+}
+.combat-health-level {
+  height: 100%;
+  background-color: #f75d5d;
+  border-radius: 10px;
+}
+.combat-health span{
+  color: white;
+  margin-bottom: 10px;
+}
+.boss-health{
+  display: flex; 
+  align-items: center; 
+  position: absolute; 
+  top: 2vh;
+  right: 2vw;
+}
+.boss-health img{
+  width: 40px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.boss-health-bar {
+  display: flex; 
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-bottom: 10px;
+  background-color: beige;
+}
+.boss-health-level {
+  height: 100%;
+  background-color: #f75d5d;
+  border-radius: 10px;
+}
+.boss-health span{
+  color: white;
+  margin-bottom: 10px;
+}
+/*--Health Bar End--*/
+
+/*Magic attack*/
+.use-magic-icon{
+  width: 180px;
+  z-index: 3;
+}
+.lighting{
+  height: 400px;
+  z-index: 3;
+}
+/* Explain text */
+.explain-text{
+  top: 10px;
+  z-index: 1;
+  color: white;
+  position: relative;
+}
+.explain-text span{
+  margin: 10px;
+}
+.keyboard-icon{
+  padding: 2px;
+  margin: 0 10px;
+  background-color: #f75d5d;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: small;
+}
+
+
+/* boss */
+.boss {
+  position: absolute;
+  width: 220px; 
+  height: 220px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: left 0.2s ease-out;
+  top: 42vh; 
+  z-index: 2;
+}
+
+
+/*--------Start Screen Start---------*/
+/* Start Screen Styles */
+.start-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/shop.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1; /* Keeps the background behind other content */
+  margin-top: 2px;
+  background-image: url('/public/startGameBackground.png'); 
+}
+
+.start-screen h1 {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font-size: em; /* Adjust size as needed */
+  color: white; /* A light blue color for a bit of pop */
+}
+
+.select-boss button {
+  width: 420px;
+  margin: 70px;
+  padding: 10px 20px;
+  font-size: 2.2rem; /* Larger font size for better readability */
+  color: rgb(125, 9, 9); /* Dark text */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 221, 85, 0.85);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.challenge-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 40px 200px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.challenge-info p{
+  margin: 5px 0px;
+  display: flex;
+  justify-content: flex-end;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.notice{
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 100px;
+  margin-right: 40px;
+  color: rgb(253, 214, 95);
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.start-button button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 40px;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  background-color: rgb(160, 27, 27, 0.8);
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+.start-button img{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 200px 270px;
+  border: none;
+}
+
+.start-screen button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+.start-screen button:disabled{
+  background-color: rgb(171, 171, 171);
+  color: rgb(246, 246, 246);
+}
+.start-screen button:disabled:hover{
+  box-shadow: none;
+}
+.select-boss img{
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+}
+.display-coins {
+  display: flex;
+  position: absolute;
+  top: 0; 
+  left: 50%; 
+  margin-top: 40px;
+  transform: translateX(-50%);
+  font-weight: bolder;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  align-items: center; 
+  justify-content: center; 
+}
+
+
+/*--------Start Screen End---------*/

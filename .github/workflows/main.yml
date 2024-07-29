@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+
+  frontend-build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.x'
+
+    - name: Jest coverage report
+      uses: ArtiomTr/jest-coverage-report-action@v2.2.7
+      with:
+        working-directory: ./client/memo-minder-web
+        github-token: ${{ secrets.TOKEN_FOR_MEMO }}
+        annotations: none
+        test-script: npm test
+        custom-title: Coverage report for frontend
+            
+  backend-build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18.x'
+
+    - name: Jest coverage report
+      uses: ArtiomTr/jest-coverage-report-action@v2
+      with:
+        working-directory: ./memo-backend
+        github-token: ${{ secrets.TOKEN_FOR_MEMO }}
+        annotations: none
+        test-script: npm test --detectOpenHandles
+        custom-title: Coverage report for backend

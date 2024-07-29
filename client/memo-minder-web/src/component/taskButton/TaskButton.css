@@ -1,0 +1,171 @@
+.task-button-container {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.add-task-button-container {
+    text-align: right;
+}
+
+.add-task-button::before {
+    content: "+";
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #7439db;
+    border-radius: 50%;
+
+}
+
+.add-task-button {
+    background-color: #7439db;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.button-icon {
+    margin-right: 10px;
+    height: 20px;
+}
+
+.menu-container {
+    position: absolute;
+    top: calc(100% + 2px);
+    right: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.menu-item {
+    display: block;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon {
+    margin-right: 10px;
+    height: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.habit-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7439db;
+    border-radius: 10px;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    width: 40%;
+    max-width: 600px;
+    height: 60%;
+    max-height: 800px;
+    /* overflow-y: auto; */
+    z-index: 1000;
+
+}
+
+.dialog-header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-buttons button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dialog-buttons button.cancel-button {
+    background-color: #7439db;
+    color: #fff;
+    border: 2px solid #7439db;
+}
+
+.dialog-buttons button.create-button {
+    background-color: #fff;
+    color: #7439db;
+}
+
+
+.dialog-buttons-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container>div {
+    margin-bottom: 10px;
+}
+
+.habit-input {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f9ecfb;
+}
+
+/* .habit-input {
+    width: calc(100% - 100px);
+} */
+
+.round-button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.round-button.selected {
+    background-color: #d4a3ff
+}
+
+.round-button.unselected {
+    background-color: #f9ecfb
+}
+
+.dialog-description {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.dialog-description span {
+    margin-left: 10px;
+}
+
+/* .add-task-button:hover, */
+.menu-item:hover {
+    background-color: #f9ecfb;
+}

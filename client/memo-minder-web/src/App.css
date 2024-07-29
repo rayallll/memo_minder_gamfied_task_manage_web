@@ -1,0 +1,14 @@
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 94vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 200px;
+  color: white;
+  background-image: linear-gradient(79deg, #7439db, #C66FBC 48%, #F7944D)
+}
+
+

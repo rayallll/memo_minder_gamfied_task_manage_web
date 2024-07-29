@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: frontend
+    runtime: node
+    rootDir: client/memo-minder-web
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+  - type: web
+    name: backend
+    runtime: node
+    rootDir: memo-backend
+    buildCommand: npm install
+    startCommand: npm start

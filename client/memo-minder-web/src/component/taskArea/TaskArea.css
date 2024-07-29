@@ -1,0 +1,263 @@
+.taskAreaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.taskAreaSections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.taskAreaSection {
+    flex-basis: calc(25% - 20px);
+    min-height: 400px;
+    margin: 0px 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(240, 229, 247);
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rewardAreaSection {
+    flex-basis: calc(25% - 20px);
+    min-height: 400px;
+    margin: 0px 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(252, 228, 185);
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.taskAreaSection h2 {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold; /* 700 is equivalent to 'bold' */
+    color: #6d5d7e; /* This is a placeholder color, use whatever color you want */
+    text-transform: uppercase; /* This makes the text uppercase */
+    margin-bottom: 15px; /* Adjust the space below the heading */
+    text-align: left;
+}
+
+.rewardAreaSection h2 {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold; /* 700 is equivalent to 'bold' */
+    color: #914a07; /* This is a placeholder color, use whatever color you want */
+    text-transform: uppercase; /* This makes the text uppercase */
+    margin-bottom: 15px; /* Adjust the space below the heading */
+    text-align: left;
+}
+/* Styles for all sections */
+.taskAreaNav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #7e5d77;
+}
+
+.taskAreaNav button {
+    background: none;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #7e5d77;
+    transition: color 0.3s;
+    font-size: 1rem; 
+}
+
+.taskAreaNav button:hover {
+    color: #7439db;
+    background-color: 2px solid #e0e0e0;
+}
+
+.taskAreaNav button.active {
+    color: #7439db; /* Active tab color */
+}
+
+
+/* Input Style */
+input[type="text"] {
+    width: calc(100% - 22px); /* Full width minus padding */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.taskList {
+    max-height: 180px; 
+    overflow-y: auto; 
+    padding-right: 5px; 
+}
+
+.rewardList {
+    max-height: 240px; 
+    overflow-y: auto; 
+    padding-right: 5px; 
+}
+
+
+/* Styles specific to Habits section */
+.habitItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.habitItem button {
+    margin-right: 10px; 
+    padding: 6px 10px;
+    background-color:#87759a;
+    color: white;
+    border: none; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+
+
+.habitItem p {
+    flex-grow: 1;
+    margin: 0;
+    line-height: habitItem button
+}
+
+/* Styles specific to Rewards section */
+.rewardItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background-color: #ffeb3b; 
+    border: 1px solid #fdd835; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.rewardItem button {
+    margin-right: 15px; 
+    padding: 8px 12px; 
+    background-color: #fbc02d; 
+    color: #4e342e; 
+    border: none; 
+    border-radius: 6px; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.rewardItem button:hover {
+    background-color: #f9a825; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+}
+
+.rewardItem p {
+    flex-grow: 1;
+    margin: 0;
+    color: #6d4c41; 
+}
+
+
+/* Styles specific to Dailies section */
+.dailyItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dailyItem button {
+    margin-right: 10px; 
+    padding: 6px 10px;
+    background-color:#87759a;
+    color: white;
+    border: none; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.dailyItem p {
+    flex-grow: 1;
+    margin: 0;
+}
+.dailyItem.completed {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.dailyItem.completed button {
+    background-color: grey;
+    color: white;
+}
+
+/* Styles specific to To Do Lists section */
+.todoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todoItem button {
+    margin-right: 10px; 
+    padding: 6px 10px;
+    background-color:#87759a;
+    color: white;
+    border: none; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.todoItem p {
+    flex-grow: 1;
+    margin: 0;
+}
+
+.todoItem.completed {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.todoItem.completed button {
+    background-color: grey;
+    color: white;
+}
+.controlButton{
+    display: flex;
+    justify-content: flex-end
+}
+
+.clearButtonContainer {
+    display: flex;
+    margin: 10px 20px;
+  }
+  
+  .clearButton {
+    padding: 10px 20px; 
+    background-color: grey;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1em; 
+    transition: background-color 0.3s;
+  }
+  
+  .clearButton:hover {
+    background-color: #2fa7d3; 
+  }
+
+  /* Add mobile responsive adjustments if necessary */
+  @media (max-width: 600px) {
+    .button, .nav-button {
+      padding: 12px 20px;
+    }
+  }
+  

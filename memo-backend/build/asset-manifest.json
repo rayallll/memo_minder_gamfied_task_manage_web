@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da7fcaf6.css",
+    "main.js": "/static/js/main.fb7049d9.js",
+    "static/js/453.da652b27.chunk.js": "/static/js/453.da652b27.chunk.js",
+    "static/media/startGameBackground.png": "/static/media/startGameBackground.089bf6ec49baab55bd3c.png",
+    "static/media/combat_scenario.png": "/static/media/combat_scenario.1635fe5b93e41ce15532.png",
+    "static/media/shop.png": "/static/media/shop.a5f7a3731a88ffa490a0.png",
+    "index.html": "/index.html",
+    "main.da7fcaf6.css.map": "/static/css/main.da7fcaf6.css.map",
+    "main.fb7049d9.js.map": "/static/js/main.fb7049d9.js.map",
+    "453.da652b27.chunk.js.map": "/static/js/453.da652b27.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da7fcaf6.css",
+    "static/js/main.fb7049d9.js"
+  ]
+}
