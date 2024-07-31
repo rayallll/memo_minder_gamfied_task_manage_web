@@ -90,7 +90,7 @@ Fixed a bug where the health points displayed on the profile page were not corre
 
 
 ## Video Demo
-[![Watch the video](readme-img/memominder-youtube-video.png)](https://www.youtube.com/watch?v=hO9mPRVtdzo)
+[![Watch the video](screenshot/memominder-youtube-video.png)](https://www.youtube.com/watch?v=hO9mPRVtdzo)
 
  * video link: [https://www.youtube.com/watch?v=SeSH-yGvLrM](https://www.youtube.com/watch?v=hO9mPRVtdzo)
 
