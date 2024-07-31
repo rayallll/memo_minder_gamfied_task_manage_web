@@ -13,7 +13,31 @@ A student life website for universities and colleges.
 **Backend**: *Node.js, MongoDB*<br>
   
 ## Project Feature
+**1. Login and Registration**
 
+This feature allows users to securely sign up and log in to the MemoMinder platform. It ensures that only authenticated users can access the platform's functionalities and protects user data.
+
+**2. Profile Management**
+
+The profile page includes detailed user information such as health points, experience points, inventory, coins, and avatar customization. Users can track their progress, view and equip items from their inventory, and see their character's development.
+
+**3. Task Management**
+
+Tasks are categorized into three types: Habits, Dailies, and To-Dos. Completing tasks rewards users with experience points, coins, and achievement points, while failing to complete them results in a loss of health points. Users can also use coins to redeem real-life rewards, such as eating a cake.
+
+**4. Store**
+
+Users can purchase weapons and items using coins earned from completing tasks. These items can be used in boss challenges and are stored in the user's inventory. Items can be equipped to the user's avatar to enhance their abilities.
+
+**5. Challenge**
+
+As users reach certain levels, they unlock boss challenges. Defeating bosses rewards users with coins and achievement points. This feature adds a layer of excitement and motivation for finishing tasks to earn experience, unlocking more levels.
+
+**6. Milestone Achievement Page**
+
+Achievements are awarded based on accumulated achievement points. The milestone achievement page displays the user's accomplishments and milestones, which are also visible on the user's profile. This feature encourages users to strive for continuous improvement and rewards their dedication.
+
+- **Designed Mindmap**
 
 
 - **Environment Setup**:<br>
