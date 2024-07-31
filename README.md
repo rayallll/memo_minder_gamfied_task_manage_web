@@ -23,7 +23,7 @@ The profile page includes detailed user information such as health points, exper
 
 **3. Task Management**
 
-Tasks are categorized into three types: Habits, Dailies, and To-Dos. Completing tasks rewards users with experience points, coins, and achievement points, while failing to complete them results in a loss of health points. Users can also use coins to redeem real-life rewards, such as eating a cake.
+Tasks are categorized into three types: Habits, Dailies, and To-Dos. Users can add and delete tasks as needed. Completing tasks rewards users with experience points, coins, and achievement points, while failing to complete them results in a loss of health points. Users can also use coins to redeem real-life rewards, such as eating a cake.
 
 **4. Store**
 
@@ -54,6 +54,17 @@ To run the project, you need to set up the following environment: <br>
 Implemented unit tests using *Jest* to ensure the reliability of individual components. Focused on testing user authentication, task creation, and real-time interactions. Additionally, 5 users tested the application for 8 rounds, providing valuable feedback for further improvements.
 
 - **Improvements**:<br>
+**Bug Fix: Purchased Items in Inventory**: <br>
+Fixed a bug where purchased weapons did not appear in the profile inventory after purchase.<br>
+**Purchase Button and Sold Status**:<br>
+Updated the purchase button for sold weapons to a disabled status. <br>
+**Game Balance - Boss Challenges**: <br>
+status and replaced the weapon image with a "sold" image. This ensures users understand that a weapon only needs to be purchased once.<br>
+**User Movement Speed and Boss Difficulty**:<br>
+Increased the user's movement speed within the game.
+Slightly lowered the difficulty of defeating bosses to keep the game balanced and enjoyable.<br>
+**Health Points Bug Fix**:<br>
+Fixed a bug where the health points displayed on the profile page were not correctly linked to the health points during boss battles.<br>
 
 
 ## Video Demo
