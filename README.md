@@ -1,4 +1,4 @@
-# Queendom_frontend
+# Memo Minder Gamfied Task Manage Web
 A student life website for universities and colleges.
 
 ## Project Description
