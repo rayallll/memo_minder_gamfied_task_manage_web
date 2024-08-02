@@ -2,8 +2,10 @@
 A student life website for universities and colleges.
 
 ## Project Description
-- **Project Type**: Master School Project in University of Waterloo ECE 651 - gamified task management platform. 
-- **Project Motivations**: MemoMinder was developed to address the lack of robust motivational mechanisms in existing task management tools. By integrating gamification and social interaction, the goal was to create a more engaging and enjoyable experience for users, helping them improve productivity and build healthy habits.
+- **Project Type**:<br>
+Master School Project in University of Waterloo ECE 651 - gamified task management platform. 
+- **Project Motivations**:<br>
+MemoMinder was developed to address the lack of robust motivational mechanisms in existing task management tools. By integrating gamification and social interaction, the goal was to create a more engaging and enjoyable experience for users, helping them improve productivity and build healthy habits.
 
 ## Project Summary
 - **Completed Functionalities**:. <br>
