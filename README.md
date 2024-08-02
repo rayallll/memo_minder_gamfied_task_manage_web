@@ -6,8 +6,18 @@ A student life website for universities and colleges.
 - **Project Motivations**: MemoMinder was developed to address the lack of robust motivational mechanisms in existing task management tools. By integrating gamification and social interaction, the goal was to create a more engaging and enjoyable experience for users, helping them improve productivity and build healthy habits.
 
 ## Project Summary
-- **Completed Functionalities**:
-- **Project Goal**: To develop a user-friendly task management platform that offers an enjoyable experience in organizing and completing tasks while fostering community interaction and motivation.
+- **Completed Functionalities**:. <br>
+User authentication (login and registration). <br>
+Profile management with avatar customization. <br>
+Task management (Habits, Dailies, and To-Dos). <br>
+Reward system with coins and experience points. <br>
+Store for purchasing items and weapons. <br>
+Boss challenges for motivational milestones. <br>
+Milestone achievement tracking. <br>
+Real-time interactions and updates. <br>
+
+- **Project Goal**: . <br>
+To develop a user-friendly task management platform that offers an enjoyable experience in organizing and completing tasks while fostering community interaction and motivation.
 - **Language Package**:<br>
 **Frontend**: *React, Javascript, HTML, CSS*<br>
 **Backend**: *Node.js, MongoDB*<br>
